@@ -1,0 +1,195 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background: #f5f7f3;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* BARRE DEFILANTE */
+
+.top-bar {
+    background: white;
+    overflow: hidden;
+    border-bottom: 1px solid #eee;
+}
+
+.marquee {
+    white-space: nowrap;
+    display: inline-block;
+    padding: 12px 0;
+    color: #558532;
+    font-weight: bold;
+    font-size: 18px;
+    animation: scrollText 15s linear infinite;
+}
+
+@keyframes scrollText {
+    0% {
+        transform: translateX(100%);
+    }
+
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+/* HERO */
+
+.hero {
+    background: #558532;
+    color: white;
+    padding: 70px 20px;
+}
+
+.hero-container {
+    max-width: 1100px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+/* TEXTE HERO */
+
+.hero-text {
+    flex: 1;
+}
+
+.hero-text h1 {
+    font-size: 38px;
+    margin-bottom: 10px;
+}
+
+.hero-text h2 {
+    font-weight: 300;
+    margin-bottom: 20px;
+}
+
+.event {
+    background: rgba(255, 255, 255, 0.15);
+    display: inline-block;
+    padding: 12px 20px;
+    border-radius: 6px;
+    font-size: 17px;
+}
+
+/* LOGO HERO */
+
+.hero-logo img {
+    width: 150px;
+}
+
+/* PRESENTATION */
+
+.section {
+    max-width: 1100px;
+    margin: auto;
+    padding: 60px 20px;
+}
+
+.section h2 {
+    color: #558532;
+    margin-bottom: 20px;
+    font-size: 28px;
+}
+
+.section p {
+    font-size: 18px;
+}
+
+/* CARDS */
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-top: 40px;
+    justify-content: center;
+}
+
+.card {
+    background: white;
+    padding: 40px;
+    border-radius: 12px;
+    width: 400px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-6px);
+}
+
+.card h3 {
+    color: #558532;
+    margin-bottom: 20px;
+}
+
+/* BUTTON */
+
+.btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 14px 25px;
+    background: #558532;
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: #3f6a24;
+}
+
+/* FOOTER */
+
+footer {
+    margin-top: 60px;
+    padding: 30px;
+    text-align: center;
+    background: #222;
+    color: #ddd;
+    font-size: 14px;
+}
+
+/* RESPONSIVE */
+
+@media(max-width:800px) {
+
+    .hero-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero-logo img {
+        width: 120px;
+    }
+
+    .hero-text h1 {
+        font-size: 28px;
+    }
+
+    .card {
+        width: 100%;
+    }
+
+}
+
+.edition {
+    color: red;
+}
+
+.edition1 {
+    color: red;
+}
